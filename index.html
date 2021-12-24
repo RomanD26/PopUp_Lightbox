@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PopUp</title>
+    <link rel="stylesheet" href="css/countainer.css" />
+    <link rel="stylesheet" href="css/order.css" />
+    <link rel="stylesheet" href="css/popup_reg.css" />
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__reg">
+        <button class="container__butt butt" type="button">Регистрация</button>
+      </div>
+      <div class="container__out">
+        <a href="#" class="container__btn btn"><span>Открыть PopUp</span></a>
+      </div>
+    </div>
+    <div class="popup">
+      <form class="popup__bg" action="#" method="">
+        <svg
+          class="popup-close"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="#cb2b20"
+            d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+          />
+        </svg>
+        <h1 class="titl" ">Регистрация</h1>
+        <div class="popup__group">
+          <label for="" class="popup__lab">Имя</label>
+          <input type="text" class="popup__input" placeholder="Введите ваше имя" maxlength="30" required/>
+        </div>
+        <div class="popup__group">
+          <label for="">Пароль</label>
+          <input id="popup__password" class="popup__input" type="password" placeholder="Введите пароль" maxlength="30" required/>
+          <a href="#" id="popup__password-one"></a>
+        </div>
+        <div class="popup__group">
+          <label for="">Пароль еще раз</label>
+          <input id="popup__password-dubl" class="popup__input" type="password" placeholder="Введите пароль еще раз" maxlength="30" required/>
+          <a href="#" id="popup__password-two"></a>
+        </div>
+        <div class="popup__group">
+          <label for="">Электронная почта</label>
+          <input type="email" class="popup__input" placeholder="Введите ваш email" required/>
+        </div>
+        <div class="popup__group">
+          <center>
+            <button class="popup__btn" type="button">Регистрация</button>
+          </center>
+        </div>
+      </form>
+    </div>
+    <div id="forma" class="order">
+      <form id="bg" action="#" class="order__form" method="">
+        <svg
+          id="close"
+          class="order__close"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16.061 7.93898C15.4754 7.353 14.5257 7.35272 13.9397 7.93833L12 9.879L10.061 7.93898C9.47503 7.353 8.52497 7.353 7.93903 7.93898C7.35309 8.52497 7.35305 9.47503 7.93903 10.061L9.879 12L7.93898 13.939C7.353 14.525 7.353 15.475 7.93898 16.061C8.52497 16.647 9.47503 16.647 10.061 16.061L12 14.121L13.939 16.061C14.525 16.647 15.475 16.647 16.061 16.061C16.647 15.475 16.647 14.525 16.061 13.939L14.121 12L16.061 10.061C16.647 9.47541 16.6466 8.52497 16.061 7.93898Z"
+            fill="#A52A2A"
+          />
+          <path
+            d="M12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12C23.9928 5.37553 18.6245 0.00717187 12 0ZM12 21C7.02942 21 3 16.9706 3 12C3 7.02942 7.02942 3 12 3C16.9706 3 21 7.02942 21 12C20.9945 16.9683 16.9683 20.9945 12 21Z"
+            fill="#4D5645"
+          />
+        </svg>
+        <h2 class="order__title">Заказать звонок</h2>
+        <div class="order__group">
+          <label for="" class="order__lab"
+            >Введите ваш номер телефона<span class="order_requaer">
+              *</span
+            ></label
+          >
+          <input
+            type="tel"
+            value=""
+            class="order__tel"
+            data-tel-input
+            maxlength="18"
+            placeholder="Введите номер телефона"
+            required
+          />
+        </div>
+        <div class="order__group">
+          <label for="">Ваш текст</label>
+          <textarea
+            name=""
+            id=""
+            cols="35"
+            rows="7"
+            class="order__text"
+            placeholder="Введите ваше сообщение"
+          ></textarea>
+        </div>
+        <div class="order__group">
+          <label for=""
+            >Выберите дату: <input type="date" name="" class="order__dat"
+          /></label>
+        </div>
+        <div class="order__group">
+          <p>
+            <span class="order_requaer">*</span
+            ><span class="order__info">Поле, обязательное для заполнения</span>
+          </p>
+        </div>
+        <div class="order__butt">
+          <button class="order__btn order__btn-custom">Отправить</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="js/order.js"></script>
+    <script src="js/reg.js"></script>
+    <script src="js/password.js"></script>
+  </body>
+</html>

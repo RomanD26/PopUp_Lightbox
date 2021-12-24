@@ -1,0 +1,114 @@
+
+
+.popup {
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	opacity: 0;
+	pointer-events: none;
+	transition: 0.5s all;
+}
+
+.popup.active {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.popup__bg {
+	position: relative;
+	width: 480px;
+	height: 550px;
+	padding: 25px;
+  background-image: url('../img/pat.svg');
+	background-color: rgb(50, 200, 150) ;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size:cover;
+	box-shadow: 0 0 25px rgb(15, 87, 1) #2c2c2c;
+	border-radius: 16px;
+}
+
+.popup-close {
+	position: absolute;
+	cursor: pointer;
+	top: 10px;
+	right: 10px;
+}
+
+.titl {
+	text-transform: uppercase;
+	padding-bottom: 8px;
+	border-bottom: 3px solid rgb(160, 93, 77);
+}
+
+.popup__group {
+	margin: 10px;
+	padding: 5px;
+	position: relative;
+}
+
+.popup__lab {
+	padding-left: 10px;
+	text-transform: uppercase;
+}
+
+.popup__input {
+	height: 40px;
+	width: 400px;
+	font-size: 18px;
+	border: none;
+	border-radius: 20px;
+	margin-top: 10px;
+	padding-left: 18px;
+	box-shadow: 2px 2px 8px rgb(73, 70, 70);
+}
+
+.popup__input:focus {
+	width: 385px;
+	transform: translate(15px);
+}
+
+#popup__password-one,
+#popup__password-two {
+	position: absolute;
+	top: 44px;
+	right: 14px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/no-view.svg) 0 0 no-repeat;
+}
+
+#popup__password-one.view,
+#popup__password-two.view {
+	background: url(../img/view.svg) 0 0 no-repeat;
+}
+
+
+.popup__btn {
+	cursor: pointer;
+	margin-top: 20px;
+	height: 46px;
+	padding: 10px 28px;
+	text-transform: uppercase;
+	font-size: 18px;
+	border: none;
+	border-radius: 8px;
+	background: rgb(1, 100, 140);
+	color: rgb(226, 207, 207);
+	letter-spacing: 2px;
+	box-shadow: 3px 3px 10px rgb(51, 51, 51);
+}
+
+.popup__btn:hover {
+	opacity: 0.8;
+}
+
+.popup__btn:active {
+  box-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+
